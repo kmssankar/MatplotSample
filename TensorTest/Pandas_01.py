@@ -19,3 +19,10 @@ print("********************")
 print("*******  Using iloc ********* ")
 DFiloc =Review.iloc[0:5,0:3]
 print(DFiloc)
+
+print("*****  Iloc single row")
+SinRow = Review.iloc[2]
+print(SinRow)
+print("*****  Iloc Remove header ")
+RemHeader = Review.iloc[:,1:]
+print(RemHeader)

@@ -1,3 +1,4 @@
+C:\Users\Sankar\PycharmProjects\MlProj01\venv\Scripts\python.exe C:/Users/Sankar/PycharmProjects/MlProj01/TensorTest/Pandas_01.py
 ******** Shape of a dataframe ********
 (4, 11)
 ********************
@@ -33,5 +34,36 @@
 1           1      Amazing  LittleBigPlanet PS Vita -- Marvel Super Hero E...
 2           2        Great                               Splice: Tree of Life
 3           3        Great                                             NHL 13
+*****  Iloc single row
+Unnamed: 0                                2
+score_phrase                          Great
+title                  Splice: Tree of Life
+url               /games/splice/ipad-141070
+platform                               iPad
+score                                   8.5
+genre                                Puzzle
+editors_choice                            N
+release_year                           2012
+release_month                             9
+release_day                              12
+Name: 2, dtype: object
+*****  Iloc Remove header
+  score_phrase                                              title  \
+0      Amazing                            LittleBigPlanet PS Vita
+1      Amazing  LittleBigPlanet PS Vita -- Marvel Super Hero E...
+2        Great                               Splice: Tree of Life
+3        Great                                             NHL 13
+
+                                                 url          platform  score  \
+0             /games/littlebigplanet-vita/vita-98907  PlayStation Vita    9.0
+1  /games/littlebigplanet-ps-vita-marvel-super-he...  PlayStation Vita    9.0
+2                          /games/splice/ipad-141070              iPad    8.5
+3                      /games/nhl-13/xbox-360-128182          Xbox 360    8.5
+
+        genre editors_choice  release_year  release_month  release_day
+0  Platformer              Y          2012              9           12
+1  Platformer              Y          2012              9           12
+2      Puzzle              N          2012              9           12
+3      Sports              N          2012              9           11
 
 Process finished with exit code 0
