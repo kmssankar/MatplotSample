@@ -1,0 +1,37 @@
+******** Shape of a dataframe ********
+(4, 11)
+********************
+******** Using head ********
+   Unnamed: 0 score_phrase                                              title  \
+0           0      Amazing                            LittleBigPlanet PS Vita
+1           1      Amazing  LittleBigPlanet PS Vita -- Marvel Super Hero E...
+
+                                                 url          platform  score  \
+0             /games/littlebigplanet-vita/vita-98907  PlayStation Vita    9.0
+1  /games/littlebigplanet-ps-vita-marvel-super-he...  PlayStation Vita    9.0
+
+        genre editors_choice  release_year  release_month  release_day
+0  Platformer              Y          2012              9           12
+1  Platformer              Y          2012              9           12
+********************
+******** Using tail ********
+   Unnamed: 0 score_phrase                 title  \
+2           2        Great  Splice: Tree of Life
+3           3        Great                NHL 13
+
+                             url  platform  score   genre editors_choice  \
+2      /games/splice/ipad-141070      iPad    8.5  Puzzle              N
+3  /games/nhl-13/xbox-360-128182  Xbox 360    8.5  Sports              N
+
+   release_year  release_month  release_day
+2          2012              9           12
+3          2012              9           11
+********************
+*******  Using iloc *********
+   Unnamed: 0 score_phrase                                              title
+0           0      Amazing                            LittleBigPlanet PS Vita
+1           1      Amazing  LittleBigPlanet PS Vita -- Marvel Super Hero E...
+2           2        Great                               Splice: Tree of Life
+3           3        Great                                             NHL 13
+
+Process finished with exit code 0
