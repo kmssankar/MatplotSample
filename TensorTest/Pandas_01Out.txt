@@ -1,4 +1,3 @@
-C:\Users\Sankar\PycharmProjects\MlProj01\venv\Scripts\python.exe C:/Users/Sankar/PycharmProjects/MlProj01/TensorTest/Pandas_01.py
 ******** Shape of a dataframe ********
 (4, 11)
 ********************
@@ -65,5 +64,60 @@ Name: 2, dtype: object
 1  Platformer              Y          2012              9           12
 2      Puzzle              N          2012              9           12
 3      Sports              N          2012              9           11
+*****  Reindexing the DataFrame
+<bound method DataFrame.reindex of   score_phrase                                              title  \
+0      Amazing                            LittleBigPlanet PS Vita
+1      Amazing  LittleBigPlanet PS Vita -- Marvel Super Hero E...
+2        Great                               Splice: Tree of Life
+3        Great                                             NHL 13
 
-Process finished with exit code 0
+                                                 url          platform  score  \
+0             /games/littlebigplanet-vita/vita-98907  PlayStation Vita    9.0
+1  /games/littlebigplanet-ps-vita-marvel-super-he...  PlayStation Vita    9.0
+2                          /games/splice/ipad-141070              iPad    8.5
+3                      /games/nhl-13/xbox-360-128182          Xbox 360    8.5
+
+        genre editors_choice  release_year  release_month  release_day
+0  Platformer              Y          2012              9           12
+1  Platformer              Y          2012              9           12
+2      Puzzle              N          2012              9           12
+3      Sports              N          2012              9           11  >
+*****  Display the index of the DataFrame
+RangeIndex(start=0, stop=4, step=1)
+*****  select specific columns using column name
+Speccols Type :  <class 'pandas.core.series.Series'>
+0                              LittleBigPlanet PS Vita
+1    LittleBigPlanet PS Vita -- Marvel Super Hero E...
+2                                 Splice: Tree of Life
+3                                               NHL 13
+Name: title, dtype: object
+*****  select specific columns using multiple columns
+                                               title  release_year  score
+0                            LittleBigPlanet PS Vita          2012    9.0
+1  LittleBigPlanet PS Vita -- Marvel Super Hero E...          2012    9.0
+2                               Splice: Tree of Life          2012    8.5
+3                                             NHL 13          2012    8.5
+MultiCols Type :  <class 'pandas.core.frame.DataFrame'>
+*****  select specific columns and rows
+0    2012
+1    2012
+2    2012
+Name: release_year, dtype: int64
+*****  mean Function
+Mean of Score  8.75
+Count of Score  4
+Min of Score  8.5
+Max of Score  9.0
+Median of Score  8.75
+Std Deviation of Score  0.28867513459481287
+Std Co-relation of Score & release_year
+              score  release_year
+score           1.0           NaN
+release_year    NaN           NaN
+******* Mean of all numeric fields in Dataframe
+Mean of All numeric fields :  Unnamed: 0          1.50
+score               8.75
+release_year     2012.00
+release_month       9.00
+release_day        11.75
+dtype: float64
