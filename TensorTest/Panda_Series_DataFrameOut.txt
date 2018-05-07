@@ -1,0 +1,71 @@
+0        Sankar
+1         Ashok
+2           123
+3         35.17
+4    2018-07-05
+dtype: object
+TupSer Type : <class 'pandas.core.series.Series'>
+City              Erode
+Designation    Associte
+Name             sankar
+dtype: object
+DictSer : <class 'pandas.core.series.Series'>
+   Experience     Name Technology
+0           6   Sankar     Python
+1          10  Johnson       Java
+2           2    Ashok       Java
+PdDataFrame Type  <class 'pandas.core.frame.DataFrame'>
+         Experience Technology
+Name
+Sankar            6     Python
+Johnson          10       Java
+Ashok             2       Java
+PdChgIdx Type  <class 'pandas.core.frame.DataFrame'>
+   Experience     Name Technology Nationality
+0           6   Sankar     Python      Indian
+1          10  Johnson       Java      Indian
+2           2    Ashok       Java      Indian
+
+PdAddColum Type  <class 'pandas.core.frame.DataFrame'>
+
+PD DF Index :      Idx
+0  Idx1
+1  Idx2
+2  Idx3
+
+After Adding Index
+        Experience     Name Technology Nationality
+Idx
+Idx1           6   Sankar     Python      Indian
+Idx2          10  Johnson       Java      Indian
+Idx3           2    Ashok       Java      Indian
+
+PdAddColum Type  <class 'pandas.core.frame.DataFrame'>
+
+Select Rows based on index
+  Experience          6
+Name           Sankar
+Technology     Python
+Nationality    Indian
+Name: Idx1, dtype: object
+
+Select column based on Column Name
+  Idx
+Idx1    Python
+Idx2      Java
+Idx3      Java
+Name: Technology, dtype: object
+
+Select Rows based on index Range and Column
+  Idx
+Idx1     Sankar
+Idx2    Johnson
+Name: Name, dtype: object
+
+Select Rows based on index and Multi Column
+           Name Nationality
+Idx
+Idx1   Sankar      Indian
+Idx2  Johnson      Indian
+
+Process finished with exit code 0

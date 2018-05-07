@@ -2,6 +2,9 @@
 import pandas as pd
 #read from CSV
 Review =pd.read_csv("inp.csv")
+#Read table -> Function using Delimiter
+ReadCat =pd.read_table("inp.csv",sep=",")
+print(ReadCat)
 print("******** Shape of a dataframe ******** ")
 #shape -> shows the shape of the dataframe
 print(Review.shape)
