@@ -1,0 +1,151 @@
+
+ File content head
+                   title  year      name   type                character     n
+0        Closet Monster  2015  Buffy #1  actor                  Buffy 4  31.0
+1       Suuri illusioni  1985    Homo $  actor                   Guests  22.0
+2   Battle of the Sexes  2017   $hutter  actor          Bobby Riggs Fan  10.0
+3  Secret in Their Eyes  2015   $hutter  actor          2002 Dodger Fan   NaN
+4            Steve Jobs  2015   $hutter  actor  1988 Opera House Patron   NaN
+
+ File content head->3
+              title  year      name   type character     n
+0   Closet Monster  2015  Buffy #1  actor   Buffy 4  31.0
+1  Suuri illusioni  1985    Homo $  actor    Guests  22.0
+
+ File content tail
+                           title  year                        name     type  \
+74996  Mia fora kai ena... moro  2011     Penelope Anastasopoulou  actress
+74997         The Magician King  2004       Tiannah Anastassiades  actress
+74998        Festival of Lights  2010             Zoe Anastassiou  actress
+74999                Toxic Tutu  2016             Zoe Anastassiou  actress
+75000           Fugitive Pieces  2007  Anastassia Anastassopoulou  actress
+
+                     character     n
+74996       Popi voulkanizater  11.0
+74997  Unicycle Race Attendant   NaN
+74998       Guidance Counselor  20.0
+74999        Demon of Toxicity   NaN
+75000             Laundry Girl  25.0
+
+ File content tail->4
+                     title  year                        name     type  \
+74997   The Magician King  2004       Tiannah Anastassiades  actress
+74998  Festival of Lights  2010             Zoe Anastassiou  actress
+74999          Toxic Tutu  2016             Zoe Anastassiou  actress
+75000     Fugitive Pieces  2007  Anastassia Anastassopoulou  actress
+
+                     character     n
+74997  Unicycle Race Attendant   NaN
+74998       Guidance Counselor  20.0
+74999        Demon of Toxicity   NaN
+75000             Laundry Girl  25.0
+
+Length of the Readfile: 75001
+
+ DataFrame with Single column
+  0                                           Closet Monster
+1                                          Suuri illusioni
+2                                      Battle of the Sexes
+3                                     Secret in Their Eyes
+4                                               Steve Jobs
+5                                   Straight Outta Compton
+6                                   Straight Outta Compton
+7                                           For Thy Love 2
+8        Lapis, Ballpen at Diploma, a True to Life Journey
+9                                             Desire (III)
+10                                 When the Man Went South
+11                                 Little Angel (Angelita)
+12                                              Mixing Nia
+13                                        The Replacements
+14                                    All Out Dysfunktion!
+15                                                    Gook
+16                                         My Song for You
+17                                         My Song for You
+18                                            Hustle Beach
+19                                    Mariano Mison... NBI
+20                                          Natas es Satan
+21                                                  B-Girl
+22                                      Battle of the Year
+23                                                 Honey 2
+24                                    Kickin' It Old Skool
+25                                          Step Up All In
+26                          The LXD: The Secrets of the Ra
+27                                             Todo x Sara
+28                                        Barrio Gangsters
+29       Cornmeal, Gunpowder, Ham Hocks and Guitar Strings
+                               ...
+74971                                              Akropol
+74972                                              Kavafis
+74973                                     Ariadne's Thread
+74974                 7 Deadly Sins: Inside the Ecomm Cult
+74975                                                Exist
+74976                                        Little Fishes
+74977                Supernaturalz: Weird, Creepy & Random
+74978                                       Chainsaw Sally
+74979                                       Chainsaw Sally
+74980                              The Rules of Attraction
+74981                                               Circle
+74982                                          Entry Level
+74983                                      Life with Fiona
+74984                                                 Ovum
+74985                                               7 avlu
+74986                                         Ftasamee!...
+74987                                       Run Rabbit Run
+74988                                  The Young Americans
+74989                                          High Strung
+74990                        Cianura si picatura de ploaie
+74991                                    The Hanover House
+74992                                             The Deal
+74993                                  I teliki apopliromi
+74994                                           180 moires
+74995                                     Ama de se thelei
+74996                             Mia fora kai ena... moro
+74997                                    The Magician King
+74998                                   Festival of Lights
+74999                                           Toxic Tutu
+75000                                      Fugitive Pieces
+Name: title, Length: 75001, dtype: object
+
+ Type of DataFrame with Single column
+  <class 'pandas.core.series.Series'>
+
+ ReadFile of index : 74000
+ title           Conception
+year                  2011
+name         Aleen Amloian
+type               actress
+character    Classroom Kid
+n                       28
+Name: 74000, dtype: object
+
+ ReadFile with year > 2015 and < 2017
+                    title  year                   name   type  \
+2    Battle of the Sexes  2017                $hutter  actor
+14  All Out Dysfunktion!  2016  Kirlew 'bliss' Vilbon  actor
+15                  Gook  2017  Kirlew 'bliss' Vilbon  actor
+18          Hustle Beach  2017  Pete 'Boretta' Torres  actor
+54             Zeroville  2017   Mike 'Mad Dog' Adams  actor
+
+               character     n
+2        Bobby Riggs Fan  10.0
+14                 Bliss   NaN
+15                 Bliss   NaN
+18                  Tony   NaN
+54  Hippie Guitar Player   NaN
+
+ ReadFile with year > 2015 and < 2017 sorted
+                                    title  year             name   type  \
+2                    Battle of the Sexes  2017          $hutter  actor
+101                  Malibu Horror Story  2017      12th Planet  actor
+113              Cold Side of the Pillow  2017  20 Plus Dancers  actor
+152   Popstar: Never Stop Never Stopping  2016          50 Cent  actor
+6780                               Kesif  2017        ?mer Acar  actor
+
+            character     n
+2     Bobby Riggs Fan  10.0
+101           Himself   NaN
+113            Dancer   NaN
+152           50 Cent  19.0
+6780          Matthew  21.0
+
+Process finished with exit code 0
