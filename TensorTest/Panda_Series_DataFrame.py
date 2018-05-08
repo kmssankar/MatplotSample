@@ -47,3 +47,13 @@ print("\nSelect Rows based on index \n ",PdAddColum.ix['Idx1'])
 print("\nSelect column based on Column Name \n ",PdAddColum['Technology'])
 print("\nSelect Rows based on index Range and Column \n ",PdAddColum.ix[:'Idx2','Name'])
 print("\nSelect Rows based on index and Multi Column \n ",PdAddColum.ix[:'Idx2',['Name','Nationality']])
+
+#Delete a column
+PdDelColumn = PdAddColum.drop('Nationality', axis=1)
+print("\nPdAddColum After dropping column \n ",PdDelColumn,"\nType",type(PdDelColumn))
+
+del PdDelColumn['Technology']
+print("\nPdAddColum After dropping column using del\n ",PdDelColumn,"\nType",type(PdDelColumn))
+
+
+

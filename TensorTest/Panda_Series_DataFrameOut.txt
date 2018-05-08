@@ -68,4 +68,20 @@ Idx
 Idx1   Sankar      Indian
 Idx2  Johnson      Indian
 
+PdAddColum After dropping column
+        Experience     Name Technology
+Idx
+Idx1           6   Sankar     Python
+Idx2          10  Johnson       Java
+Idx3           2    Ashok       Java
+Type <class 'pandas.core.frame.DataFrame'>
+
+PdAddColum After dropping column using del
+        Experience     Name
+Idx
+Idx1           6   Sankar
+Idx2          10  Johnson
+Idx3           2    Ashok
+Type <class 'pandas.core.frame.DataFrame'>
+
 Process finished with exit code 0
