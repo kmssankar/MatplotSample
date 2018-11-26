@@ -1,5 +1,4 @@
-
- File content head
+File content head
                    title  year      name   type                character     n
 0        Closet Monster  2015  Buffy #1  actor                  Buffy 4  31.0
 1       Suuri illusioni  1985    Homo $  actor                   Guests  22.0
@@ -134,18 +133,36 @@ Name: 74000, dtype: object
 54  Hippie Guitar Player   NaN
 
  ReadFile with year > 2015 and < 2017 sorted
-                                    title  year             name   type  \
-2                    Battle of the Sexes  2017          $hutter  actor
-101                  Malibu Horror Story  2017      12th Planet  actor
-113              Cold Side of the Pillow  2017  20 Plus Dancers  actor
-152   Popstar: Never Stop Never Stopping  2016          50 Cent  actor
-6780                               Kesif  2017        ?mer Acar  actor
+                      title  year                name     type  \
+66426  #DigitalLivesMatter  2016          Rashan Ali  actress
+5765         #FromJennifer  2017        Aaron Abrams    actor
+7704         #FromJennifer  2017  Christian Ackerman    actor
+71062         #REALITYHIGH  2017     Suzanne Altfeld  actress
+512                  #Roxy  2017     Chris Aanderson    actor
 
-            character     n
-2     Bobby Riggs Fan  10.0
-101           Himself   NaN
-113            Dancer   NaN
-152           50 Cent  19.0
-6780          Matthew  21.0
+                   character   n
+66426          News Reporter NaN
+5765          Ralph Sinclair NaN
+7704                   Simon NaN
+71062  Freddie's Grandmother NaN
+512               Roxy's Dad NaN
 
-Process finished with exit code 0
+ Select File == and Sorted
+      title  year             name   type   character   n
+512  #Roxy  2017  Chris Aanderson  actor  Roxy's Dad NaN
+
+ Select File == and Sorted by Index
+          title  year                 name   type        character     n
+12868  Macbeth  2015       Darren Adamson  actor          Soldier   NaN
+22302  Macbeth  1916  Spottiswoode Aitken  actor           Duncan   4.0
+25855  Macbeth  1948          Robert Alan  actor   Third Murderer   NaN
+26990  Macbeth  2016        John Albasiny  actor           Doctor   NaN
+38090  Macbeth  1948       William Alland  actor  Second Murderer  18.0
+
+ Select File == and Sorted by Column
+          title  year                 name     type        character     n
+22302  Macbeth  1916  Spottiswoode Aitken    actor           Duncan   4.0
+63776  Macbeth  1916           Mary Alden  actress     Lady Macduff   6.0
+25855  Macbeth  1948          Robert Alan    actor   Third Murderer   NaN
+38090  Macbeth  1948       William Alland    actor  Second Murderer  18.0
+40639  Macbeth  1997         Stevie Allen    actor         Murderer  21.0

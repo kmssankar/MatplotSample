@@ -20,13 +20,18 @@ print("\n ReadFile of index : 74000 \n",ReadFile.ix[74000])
 
 #Column > 1990
 ReadFileColGt90 = ReadFile[(ReadFile['year'] > 2015) & (ReadFile['year'] <= 2017)]
-ReadFileColGt90Srted = ReadFileColGt90.sort_values(by=['name'])
+ReadFileColGt90Srted = ReadFileColGt90.sort_values(by=['title','name','year'])
 print("\n ReadFile with year > 2015 and < 2017 \n",ReadFileColGt90.head())
 print("\n ReadFile with year > 2015 and < 2017 sorted \n",ReadFileColGt90Srted.head())
 
+#column == condition
+Selmovie =ReadFile[(ReadFile['title']=='#Roxy')].sort_values(by='year')
+print("\n Select File == and Sorted \n",Selmovie.head())
 
+#sort by index
+Selmovieandsrt =ReadFile[(ReadFile['title']=='Macbeth')].sort_index()
+print("\n Select File == and Sorted by Index\n",Selmovieandsrt.head())
 
-
-
-
-
+#Sort by a column (multiRow Selected)
+SortbyColMulti =ReadFile[(ReadFile['title']=='Macbeth')].sort_values(by='year')
+print("\n Select File == and Sorted by Column \n",SortbyColMulti.head())
