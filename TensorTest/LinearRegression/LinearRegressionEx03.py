@@ -5,7 +5,10 @@ import statsmodels.api as sm
 import seaborn as sns
 
 #Read Data
-raw_data = pd.read_csv('real_estate_price_size_year_view.csv')
+
+print (" Test")
+raw_data = pd.read_csv('TensorTest\LinearRegression\real_estate_price_size_year_view.csv')
+
 
 print(raw_data.describe())
 
@@ -42,4 +45,3 @@ print(prediction)
 new_data = new_data.join(predictiondf)
 
 print(new_data)
-
