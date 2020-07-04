@@ -5,32 +5,24 @@ import statsmodels.api as sm
 import seaborn as sns
 
 #Read Data
-
 print (" Test")
-raw_data = pd.read_csv('TensorTest\LinearRegression\real_estate_price_size_year_view.csv')
-
+raw_data = pd.read_csv('real_estate_price_size_year_view.csv')
 
 print(raw_data.describe())
-
-print (raw_data.head())
-
+print(raw_data.head())
 raw_data["view"] = raw_data["view"].map({"Sea view":1,"No sea view":0})
 
-print (raw_data.head())
-
+print(raw_data.head())
 x1 = raw_data[["size","year","view"]]
 
 print(x1)
-
 y=raw_data["price"]
 
 print(y)
 x = sm.add_constant(x1)
 
 print(x)
-
 result=sm.OLS(y,x).fit()
-
 print(result.summary())
 
 #predict from model
@@ -41,7 +33,6 @@ prediction = result.predict(new_data)
 
 predictiondf = pd.DataFrame({"prediction" :prediction})
 print(prediction)
-
 new_data = new_data.join(predictiondf)
 
 print(new_data)
