@@ -1,7 +1,4 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
 from sklearn.linear_model import LinearRegression
 from sklearn.feature_selection import f_regression
 import seaborn as sns
@@ -42,7 +39,7 @@ print("Adjusted R Square : ", adjusted_r_squared(x1.shape[0], x1.shape[1], r_squ
 
 # feature selection
 f_values = f_regression(x1,y1)
-print(f_values)
+print("f_Values : ",f_values)
 
 
 p_values = f_values[1].round(3)
